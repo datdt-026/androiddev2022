@@ -22,6 +22,8 @@ public class WeatherActivity extends AppCompatActivity {
         Log.i(TAG, "onStart");
     }
 
+
+
     @Override
     protected void onStart() {
         super.onStart();
