@@ -19,6 +19,10 @@ public class WeatherActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().add(
                 R.id.container, ff).commit();
 
+        WeatherFragment wf =  WeatherFragment.newInstance("","");
+        // Add the fragment to the 'container' FrameLayout
+        getSupportFragmentManager().beginTransaction().add(
+                R.id.container, wf).commit();
 
         Log.i(TAG, "onStart");
     }
