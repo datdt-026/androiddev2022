@@ -17,12 +17,12 @@ public class WeatherActivity extends AppCompatActivity {
         ForecastFragment ff =  ForecastFragment.newInstance("","");
         // Add the fragment to the 'container' FrameLayout
         getSupportFragmentManager().beginTransaction().add(
-                R.id.container, ff).commit();
+                R.id.ff, ff).commit();
 
         WeatherFragment wf =  WeatherFragment.newInstance("","");
         // Add the fragment to the 'container' FrameLayout
         getSupportFragmentManager().beginTransaction().add(
-                R.id.container, wf).commit();
+                R.id.wf, wf).commit();
 
         Log.i(TAG, "onStart");
     }
