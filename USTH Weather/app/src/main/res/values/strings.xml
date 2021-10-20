@@ -1,5 +1,17 @@
 <resources>
     <string name="app_name">USTH Weather</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="partly_cloudy_24_c_32_c">Partly cloudy 24*C 32*c</string>
+    <string name="showers_24_c_30_c">Showers 24*C 30*c</string>
+    <string name="rain_24_c_32_c">Rain 24*C 32*c</string>
+    <string name="scattered_showers_24_c_27_c">Scattered Showers 24*C 27*c</string>
+    <string name="mostly_cloudy_22_c_30_c">Mostly Cloudy 22*C 30*c</string>
+    <string name="partly_cloudy_24_c_31_c">Partly cloudy 24*C 31*c</string>
+    <string name="thunderstroms_24_c_32_c">Thunderstroms 24*C 32*c</string>
+
 </resources>

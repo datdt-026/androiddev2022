@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">USTH Weather</string>
+    <string name="mon">Thứ 2</string>
+    <string name="tue">Thứ 3</string>
+    <string name="wed">Thứ 4</string>
+    <string name="thu">Thứ 5</string>
+    <string name="fri">Thứ 6</string>
+    <string name="sat">Thứ 7</string>
+    <string name="partly_cloudy_24_c_32_c">Có mây 24*C 32*c</string>
+    <string name="showers_24_c_30_c">Mưa 24*C 30*c</string>
+    <string name="rain_24_c_32_c">Mưa 24*C 32*c</string>
+    <string name="scattered_showers_24_c_27_c">Mưa rào rải rác 24*C 27*c</string>
+    <string name="mostly_cloudy_22_c_30_c">Nhiều mây 22*C 30*c</string>
+    <string name="partly_cloudy_24_c_31_c">Có mây 24*C 31*c</string>
+    <string name="thunderstroms_24_c_32_c">Bão 24*C 32*c</string>
+</resources>

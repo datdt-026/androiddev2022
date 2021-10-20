@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -24,7 +25,7 @@
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:text="Mon" />
+                android:text="@string/mon" />
 
             <ImageView
                 android:layout_width="99dp"
@@ -36,7 +37,7 @@
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:text="Partly cloudy 24*C 32*c" />
+                android:text="@string/partly_cloudy_24_c_32_c" />
 
         </LinearLayout>
 
@@ -50,7 +51,7 @@
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:text="Tue" />
+                android:text="@string/tue" />
 
             <ImageView
                 android:layout_width="99dp"
@@ -62,7 +63,7 @@
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:text="Showers 24*C 30*c" />
+                android:text="@string/showers_24_c_30_c" />
 
         </LinearLayout>
 
@@ -76,7 +77,7 @@
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:text="Wed" />
+                android:text="@string/wed" />
 
             <ImageView
                 android:layout_width="99dp"
@@ -88,7 +89,7 @@
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:text="Rain 24*C 32*c" />
+                android:text="@string/rain_24_c_32_c" />
 
         </LinearLayout>
 
@@ -102,7 +103,7 @@
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:text="Thu" />
+                android:text="@string/thu" />
 
             <ImageView
                 android:layout_width="99dp"
@@ -114,7 +115,7 @@
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:text="Scattered Showers 24*C 27*c" />
+                android:text="@string/scattered_showers_24_c_27_c" />
 
         </LinearLayout>
 
@@ -128,7 +129,7 @@
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:text="Fri" />
+                android:text="@string/fri" />
 
             <ImageView
                 android:layout_width="99dp"
@@ -140,7 +141,7 @@
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:text="Mostly Cloudy 22*C 30*c" />
+                android:text="@string/mostly_cloudy_22_c_30_c" />
 
         </LinearLayout>
 
@@ -154,7 +155,7 @@
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:text="Sat" />
+                android:text="@string/sat" />
 
             <ImageView
                 android:layout_width="99dp"
@@ -166,7 +167,7 @@
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:text="Partly cloudy 24*C 31*c" />
+                android:text="@string/partly_cloudy_24_c_31_c" />
 
         </LinearLayout>
 
@@ -192,12 +193,9 @@
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:text="Thunderstroms 24*C 32*c" />
+                android:text="@string/thunderstroms_24_c_32_c" />
 
         </LinearLayout>
 
     </LinearLayout>
-
-
-
-</FrameLayout>
+</ScrollView>
