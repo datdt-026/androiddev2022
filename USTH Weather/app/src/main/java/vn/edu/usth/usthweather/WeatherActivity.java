@@ -7,9 +7,12 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.TableLayout;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -77,6 +80,11 @@ public class WeatherActivity extends AppCompatActivity {
         Log.i(TAG, "onDestroy");
     }
 
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
     public class HomeFragmentPagerAdapter extends FragmentPagerAdapter {
         private final int PAGE_COUNT = 3;
         private String titles[] = new String[] { "Hanoi", "Paris", "Toulouse" };
@@ -102,5 +110,26 @@ public class WeatherActivity extends AppCompatActivity {
             return titles[page];
         }
     }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId()== R.id.refresh) {
+            Toast.makeText(this, "Refreshing...", Toast.LENGTH_SHORT).show();
+        }else if(item.getItemId()== R.id.search) {
+            Toast.makeText(this, "Searching...", Toast.LENGTH_SHORT).show();
+        }else if(item.getItemId()== R.id.setting) {
+            Intent myIntent = new Intent(WeatherActivity.this, SettingsActivity.class);
+            WeatherActivity.this.startActivity(myIntent);
+            Toast.makeText(this, "Setting selected", Toast.LENGTH_SHORT).show();
+        }else if(item.getItemId()== R.id.notification) {
+            Intent myIntent = new Intent(WeatherActivity.this, NotificationActivity.class);
+            WeatherActivity.this.startActivity(myIntent);
+
+            Toast.makeText(this, " Notification selected", Toast.LENGTH_SHORT).show();
+        }
+        return super.onOptionsItemSelected(item);
+
+    }
+
+
 
 }
