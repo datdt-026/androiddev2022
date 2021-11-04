@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.USTHWeather">
-        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".PrefActivity"></activity>
+        <activity android:name=".SettingsActivity" />
         <activity android:name=".NotificationActivity" />
         <activity
             android:name=".WeatherActivity"

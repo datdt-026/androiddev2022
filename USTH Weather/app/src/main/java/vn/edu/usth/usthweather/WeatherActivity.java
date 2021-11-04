@@ -1,5 +1,6 @@
 package vn.edu.usth.usthweather;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -13,6 +14,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+import android.os.Handler;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -45,6 +47,39 @@ public class WeatherActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(pager);
 
         Log.i(TAG, "onStart");
+    }
+
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.refresh) {
+            final Handler handler = new Handler();
+            Thread t = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        Thread.sleep(0);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    handler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(getApplicationContext(), "Hi from a Handler inside of a background Thread!", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                }
+            });
+            t.start();
+        }
+        else if (id == R.id.setting) {
+            openPrefActivity();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+    public void openPrefActivity() {
+        Intent intent = new Intent(this, PrefActivity.class);
+        startActivity(intent);
     }
 
 
@@ -110,26 +145,4 @@ public class WeatherActivity extends AppCompatActivity {
             return titles[page];
         }
     }
-
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId()== R.id.refresh) {
-            Toast.makeText(this, "Refreshing...", Toast.LENGTH_SHORT).show();
-        }else if(item.getItemId()== R.id.search) {
-            Toast.makeText(this, "Searching...", Toast.LENGTH_SHORT).show();
-        }else if(item.getItemId()== R.id.setting) {
-            Intent myIntent = new Intent(WeatherActivity.this, SettingsActivity.class);
-            WeatherActivity.this.startActivity(myIntent);
-            Toast.makeText(this, "Setting selected", Toast.LENGTH_SHORT).show();
-        }else if(item.getItemId()== R.id.notification) {
-            Intent myIntent = new Intent(WeatherActivity.this, NotificationActivity.class);
-            WeatherActivity.this.startActivity(myIntent);
-
-            Toast.makeText(this, " Notification selected", Toast.LENGTH_SHORT).show();
-        }
-        return super.onOptionsItemSelected(item);
-
-    }
-
-
-
 }
