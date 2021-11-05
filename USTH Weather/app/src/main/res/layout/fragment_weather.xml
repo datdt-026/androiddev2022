@@ -6,6 +6,10 @@
     android:background="#99FF99"
     tools:context=".WeatherFragment">
 
+<!--    tools:context=".WeatherActivity">-->
+
+
+
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="60dp"
@@ -15,12 +19,12 @@
         android:layout_alignParentLeft="true"
         />
 
-    <ImageView
-        android:layout_width="291dp"
-        android:layout_height="257dp"
-        android:layout_centerInParent="true"
-        android:src="@drawable/cloudy"
-        android:background="@drawable/frame"/>
+<!--    <ImageView-->
+<!--        android:layout_width="291dp"-->
+<!--        android:layout_height="257dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:src="@drawable/cloudy"-->
+<!--        android:background="@drawable/frame"/>-->
 
     <TextView
         android:layout_width="60dp"
@@ -28,5 +32,11 @@
         android:text="Paris"
         android:textSize="18dp"
         android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/logo"/>
 
 </RelativeLayout>
